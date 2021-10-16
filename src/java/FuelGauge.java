@@ -20,7 +20,7 @@ public class FuelGauge {
 		try {
 			addOneLitre();
 		} catch (IllegalArgumentException e) {
-			System.out.println("Переполнение бака, лишнее слито");
+			System.out.println("РџРµСЂРµРїРѕР»РЅРµРЅРёРµ Р±Р°РєР°, Р»РёС€РЅРµРµ СЃР»РёС‚Рѕ.");
 		}
 			
 	}
@@ -39,7 +39,7 @@ public class FuelGauge {
 		if (this.fuelValue > 0.1) {
 			fuelValue-=0.1;
 		} else {
-			System.out.println("Закончилось топливо, остановка и заправка.");
+			System.out.println("Р—Р°РєРѕРЅС‡РёР»РѕСЃСЊ С‚РѕРїР»РёРІРѕ, РѕСЃС‚Р°РЅРѕРІРєР° Рё Р·Р°РїСЂР°РІРєР°");
 			refuel();
 		}
 	}

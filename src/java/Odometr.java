@@ -23,14 +23,14 @@ public class Odometr {
 		try {
 			addDistance();
 		} catch ( IllegalArgumentException e) {
-			System.out.println("Ïðåâûøåí êèëîìåòðàæ, îäîìåòð ñáðîøåí");	
+			System.out.println("ÐŸÑ€ÐµÐ²Ñ‹ÑˆÐµÐ½ ÐºÐ¸Ð»Ð¾Ð¼ÐµÑ‚Ñ€Ð°Ð¶, Ð¾Ð´Ð¾Ð¼ÐµÑ‚Ñ€ ÑÐ±Ñ€Ð¾ÑˆÐµÐ½.");
 		}
 	}
 	
 	
 	private void addDistance () {
 		this.distance++;
-		System.out.println("Òîïëèâî: " + String.format("%6.1f",fg.getFuelValueNow()) + " Ðàññòîÿíèå: " + distanceNow());
+		System.out.println("Ð¢Ð¾Ð¿Ð»Ð¸Ð²Ð¾: " + String.format("%6.1f",fg.getFuelValueNow()) + "Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ: " + distanceNow());
 		fg.minusOneLetre();
 		
 		if (this.distance > MAX_DISTANCE) {
