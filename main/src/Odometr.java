@@ -1,5 +1,3 @@
-package car;
-
 public class Odometr {
 	private int distance;
 	private FuelGauge fg;
